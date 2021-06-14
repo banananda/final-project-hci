@@ -12,6 +12,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
+  position: fixed;
 }
 
 #logo-navbar-img {
@@ -38,16 +39,25 @@ nav {
 
 .menu-title {
   color: white;
-  padding: 33px 10px 30px 10px;
+  padding: 33px 20px 30px 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   border-bottom: 3px solid transparent;
-  transition: border-color 300ms;
+  transition: all 300ms;
 }
 
+.dropdown:hover .menu-title,
 .menu-title:hover {
   border-bottom: 3px solid #ffd60a;
+}
+
+.dropdown .menu-title:hover {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
 }
 
 .dropdown-content {
@@ -72,16 +82,33 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  /* flex-direction: column; */
 }
-
-/* .dropdown:hover .menu-title {
-  background-color: white;
-  color: #001d3d;
-} */
 
 .dropdown-arrow {
   margin-left: 8px;
   height: 10px;
   width: 10px;
+}
+
+#pre-reg-btn {
+  background-color: #ffd60a;
+  border: none;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  right: 80px;
+}
+
+#pre-reg-btn:hover {
+  background-color: #ffe460;
+  cursor: pointer;
+}
+
+#first-section {
+  height: 200vh;
+  width: 100%;
+  background-color: #f4f3ee;
 }
