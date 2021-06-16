@@ -66,32 +66,31 @@
   transform: rotate(225deg);
 }
 
-.mapsInfo{
-    position: absolute;
-    bottom: 0;
-    max-width: 700px;
+.mapsInfo {
+  position: absolute;
+  bottom: 0;
+  max-width: 700px;
 }
 
-.mapsInfo div{
-    display: none;
+.mapsInfo div {
+  display: none;
 }
 
-.mapsInfo div.activeInfo{
-    display: block;
-    padding: 30px;
-    padding-left: 100px;
-    background: hsla(211, 100%, 12%, 0.5);
+.mapsInfo div.activeInfo {
+  display: block;
+  padding: 30px;
+  padding-left: 100px;
+  background: hsla(211, 100%, 12%, 0.5);
 }
 
-.mapsInfo div h2{
-    color: #fff;
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;
+.mapsInfo div h2 {
+  color: #fff;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
 }
 
-.mapsInfo div p{
-    color: #fff;
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
+.mapsInfo div p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
-
