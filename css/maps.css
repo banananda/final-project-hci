@@ -80,7 +80,7 @@
     display: block;
     padding: 30px;
     padding-left: 100px;
-    background: rgba(0,0,0,0.2);
+    background: hsla(211, 100%, 12%, 0.5);
 }
 
 .mapsInfo div h2{
