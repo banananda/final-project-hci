@@ -69,34 +69,18 @@
     <!-- CONTENT -->
     <!-- ISI KONTEN DI SINI -->
     <section class="pre-reg">
-        <div class="form">
-          <div class="form-box"></div>
-          <div class="form-content">
-            <form action="">
-                <div>
-                    <label for="">Email</label>
-                    <input type="text" id="email">
-                </div>
-                <div>
-                    <label for="">Username</label>
-                    <input type="text" id="username">
-                </div>
-                <div>
-                    <label for="">Password</label>
-                    <input type="password" id="password">
-                </div>
-                <div>
-                    <label for="">Date of Birth:</label>
-                    <input type="date">
-                </div>
-                <div>
-                    <input type="checkbox" id="agreement">
-                    <label for="">I agree to the terms and conditions and the privacy policy</label>
-                </div>
-                <button type="submit" onclick="validate()">Submit</button>
-            </form>
-        </div>
-        </div>
+      <div class="form">
+        <div class="form-box"></div>
+        <div class="form-content"></div>
+          <form action="" class="form-input">
+            <input type="text" class="input-field" id="email" placeholder="Email"/>
+            <input type="text" class="input-field" id="username" placeholder="Username"/>
+            <input type="password" class="input-field" id="password" placeholder="Enter Password"/>
+            <input type="date" class="input-field" id="date-of-birth"/>
+            <input type="checkbox" class="check-box" id="agreement" /> <span>I agree to the terms and conditions and the privacy policy</span>
+            <button type="submit" class="submit-btn" onclick="validate()">Submit</button>
+          </form>
+      </div>
     </section>
   </body>
 </html>
