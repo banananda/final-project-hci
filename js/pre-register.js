@@ -13,7 +13,7 @@ let validate = () => {
     validateAgreement(agreement, errorMsg)
 
     if (errorMsg.length === 0) {
-        alert('Registration Success')
+        alert('Pre-Registration Success')
     } else {
         alert(errorMsg.join('\n'))
     }
