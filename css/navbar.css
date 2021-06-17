@@ -28,6 +28,13 @@ nav {
   background-size: cover;
 }
 
+#logo-navbar-text {
+  display: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd60a;
+}
+
 #menu {
   margin-left: 180px;
   display: flex;
@@ -109,4 +116,29 @@ a {
 #pre-reg-btn:hover {
   background-color: #ffe460;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    justify-content: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #pre-reg-btn {
+    display: none;
+  }
+
+  #logo-navbar-img {
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    display: none;
+  }
+
+  #logo-navbar-text {
+    display: flex;
+  }
 }
