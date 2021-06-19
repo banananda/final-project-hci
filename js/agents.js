@@ -1,33 +1,22 @@
-$(function () {
-    const imgBackground = document.querySelector('.imgBackground');
-    const slides = imgBackground.getElementsByTagName('img');
-    var i = 0;
+$(function(){
+let slides = $(".slide");
+slides.hide();
+    let currIdx = 0;
+    let minIdx = 0;
+    let maxIdx = slides.length -1;
+    slides.eq(0).show();
 
-    $("#slide-right").click( () => {
-        slides[i].classList.remove('activeAgents');
-        i = (i + 1) % slides.length;
-        slides[i].classList.add('activeAgents');
+    $("#slide-right").click(()=>{
+        slides.eq(currIdx).hide();
+        currIdx++;
+        if (currIdx > maxIdx) currIdx = minIdx;
+        slides.eq(currIdx).show();
     });
 
-    $("#slide-left").click( () => {
-        slides[i].classList.remove('activeAgents');
-        i = (i - 1 + slides.length) % slides.length;
-        slides[i].classList.add('activeAgents');
-    });
-
-    const agentsInfo = document.querySelector('.agentsInfo');
-    const slidesInfo = agentsInfo.getElementsByTagName('div');
-    var j = 0;
-
-    $("#slide-right").click( () => {
-        slidesInfo[j].classList.remove('activeInfo');
-        j = (j + 1) % slidesInfo.length;
-        slidesInfo[j].classList.add('activeInfo');
-    });
-
-    $("#slide-left").click( () => {
-        slidesInfo[j].classList.remove('activeInfo');
-        j = (j - 1 + slidesInfo.length) % slidesInfo.length;
-        slidesInfo[j].classList.add('activeInfo');
+    $("slide-left").click(()=>{
+        slides.eq(currIdx).hide();
+        currIdx--;
+        if (currIdx < minIdx) currIdx = maxIdx;
+        slides.eq(currIdx).show();
     });
 });
