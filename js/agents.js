@@ -13,7 +13,7 @@ slides.hide();
         slides.eq(currIdx).show();
     });
 
-    $("slide-left").click(()=>{
+    $("#slide-left").click(()=>{
         slides.eq(currIdx).hide();
         currIdx--;
         if (currIdx < minIdx) currIdx = maxIdx;
