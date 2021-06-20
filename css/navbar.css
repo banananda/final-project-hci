@@ -148,7 +148,8 @@ a {
     display: none;
     position: absolute;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 130px;
+    /* padding-top: 50px; */
     margin-left: 0px;
     width: 240px;
     height: 100vh;
@@ -188,6 +189,15 @@ a {
 
   #pre-reg-btn {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    height: 50px;
+    width: 240px;
+    border-radius: 0;
+    box-shadow: 0 0 5px #ffd60a;
+    text-align: left;
+    padding-left: 20px;
   }
 
   #logo-navbar {
