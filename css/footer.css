@@ -39,9 +39,9 @@ footer > .bottom {
   align-items: flex-end;
 }
 
-#social-media * {
+#social-media img {
   height: 24px;
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 #social-media a:hover {
@@ -50,6 +50,45 @@ footer > .bottom {
 
 #copyright {
   color: #f4f3ee;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    height: auto;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  footer > .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > .top > div {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
+  footer > .bottom {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #social-media img {
+    margin-right: 20px;
+  }
+
+  #social-media a:last-child img {
+    margin-right: 0;
+  }
+
+  #copyright {
+    margin-top: 60px;
+    font-size: 12px;
+  }
 }

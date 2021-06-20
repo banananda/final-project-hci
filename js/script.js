@@ -16,20 +16,26 @@ $(function () {
       let preRegButton = $("#pre-reg-btn");
       if (toggleState == false) {
         dropdownMenu.css({
-          display: "flex",
-          transition: "all 500ms",
+          right: "0px",
+          transition: "all 400ms ease",
+          boxShadow: "0 0 5px #001d3d",
         });
         preRegButton.css({
-          display: "block",
+          right: "0px",
+          transition: "all 400ms ease",
+          boxShadow: "0 0 5px #ffd60a",
         });
         toggleState = true;
       } else {
         dropdownMenu.css({
-          display: "none",
-          transition: "all 500ms",
+          right: "-240px",
+          transition: "all 400ms ease",
+          boxShadow: "none",
         });
         preRegButton.css({
-          display: "none",
+          right: "-240px",
+          transition: "all 400ms ease",
+          boxShadow: "none",
         });
         toggleState = false;
       }
@@ -38,10 +44,12 @@ $(function () {
     toggleInfo = () => {
       if (toggleStateInfo == false) {
         dropdownInfo.css({
+          transition: "all 500ms ease",
+
           display: "block",
         });
         menuTitleInfo.css({
-          "border-bottom": "2px solid #ffd60a",
+          "border-bottom": "3px solid #ffd60a",
         });
         toggleStateInfo = true;
 
@@ -69,7 +77,7 @@ $(function () {
           display: "block",
         });
         menuTitleSocials.css({
-          "border-bottom": "2px solid #ffd60a",
+          "border-bottom": "3px solid #ffd60a",
         });
         toggleStateSocials = true;
 
