@@ -1,5 +1,6 @@
 $(function () {
   var xDown = null;
+  var yDown = null;
 
   let container = $("#card-container");
   var position = 2;
@@ -23,34 +24,42 @@ $(function () {
   function handleTouchStart(evt) {
     const firstTouch = getTouches(evt)[0];
     xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
   }
 
   function handleTouchMove(evt) {
-    if (!xDown) {
+    if (!xDown || !yDown) {
       return;
     }
 
     var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
 
     var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
 
     console.log(xDiff);
 
-    /*most significant*/
-    if (xDiff > 0) {
-      /* left swipe */
-      if (position < 3) {
-        position += 1;
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      // check lebih besar swipe y atau x
+      if (xDiff > 0) {
+        /* left swipe */
+        if (position < 3) {
+          position += 1;
+        }
+      } else {
+        /* right swipe */
+        if (position > 1) {
+          position -= 1;
+        }
       }
     } else {
-      // right swipe
-      if (position > 1) {
-        position -= 1;
-      }
+      //   do nothing
     }
 
     /* reset values */
     xDown = null;
+    yDown = null;
     swiper();
   }
 
