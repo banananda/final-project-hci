@@ -6,6 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* MAIN CONTAINER */
+
 nav {
   width: 100%;
   height: 80px;
@@ -26,13 +28,6 @@ nav {
   background-image: url("../images/laforant-logo-yellow.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#logo-navbar-text {
-  display: none;
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffd60a;
 }
 
 #menu {
@@ -118,27 +113,119 @@ a {
   cursor: pointer;
 }
 
+/* RESPONSIVE STUFF */
+/* WEB NAME */
+
+#logo-navbar-text {
+  display: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd60a;
+}
+
+/* MENU BUTTON */
+
+#menu-btn {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  background-image: url("../images/menu-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   nav {
-    justify-content: center;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    flex-direction: column;
   }
 
   #menu {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 0px;
+    width: 240px;
+    height: 100vh;
+    right: 0;
+    background-color: #05274b;
+    box-shadow: 0 0 5px #001d3d;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-title {
+    padding: 20px;
+    border-bottom: 1px solid #001226;
+  }
+
+  .dropdown-content {
+    position: relative;
+  }
+
+  .dropdown-content a {
+    padding: 20px;
+    background-color: #0b2c51;
+    border-bottom: 1px solid #001226;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .menu-title,
+  .menu-title:hover {
+    border-bottom: 1px solid #001226;
   }
 
   #pre-reg-btn {
     display: none;
   }
 
-  #logo-navbar-img {
-    /* position: relative;
-    top: 0;
-    left: 0; */
-    display: none;
+  #logo-navbar {
+    display: flex;
+    flex-direction: row;
   }
 
+  /* #logo-navbar-img {
+    position: relative;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    display: none;
+  } */
+
   #logo-navbar-text {
+    position: relative;
+    margin-top: 30px;
     display: flex;
+  }
+
+  #logo-navbar-img {
+    position: relative;
+    display: none;
+    margin-right: 20px;
+    left: 0;
+  }
+
+  /* #logo-navbar-text {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    color: white;
+  } */
+
+  #menu-btn {
+    margin-top: 30px;
+    display: block;
   }
 }

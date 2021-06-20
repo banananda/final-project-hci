@@ -24,10 +24,11 @@
         </a>
         <div id="menu">
             <div class="dropdown">
-                <p class="menu-title">GAME INFO<img class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
+                <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
+                        src="images/Dropdown Arrow Icon.png" alt="">
                 </p>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="dropdown-info">
                     <a href="maps.html">MAPS</a>
                     <a href="agents.html">AGENTS</a>
                 </div>
@@ -37,10 +38,10 @@
                 </div>
             </a>
             <div class="dropdown">
-                <p class="menu-title">OUR SOCIALS<img class="dropdown-arrow" src="images/Dropdown Arrow Icon.png"
-                        alt="">
+                <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img
+                        class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
                 </p>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="dropdown-socials">
                     <a target="_blank" href="https://twitter.com/home">TWITTER</a>
                     <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
                     <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
@@ -49,6 +50,7 @@
             </div>
         </div>
         <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
+        <div onclick="toggleDropdown()" id="menu-btn"></div>
     </nav>
 
     <!-- CONTENT -->
