@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.agents {
+  height: 56.5vw;
+  width: 100%;
+  background-color: #f4f3ee;
+  position: relative;
+}
+
+.agents-background {
+  background-image: url("../images/agents-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.agents > .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.agents > .content > .left {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+
+.agents > .content > .left > img {
+  position: absolute;
+  height: 100%;
+}
+
+.agentsInfo {
+  height: 100%;
+  margin-left: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.agentsInfo div {
+  display: none;
+}
+
+.agentsInfo div.activeInfo {
+  display: block;
+}
+
+.agentsInfo > h2 {
+  font-size: 72px;
+  color: #001d3d;
+  font-weight: 900;
+  line-height: 72px;
+  font-family: "Roboto", sans-serif;
+}
+
+.agentsInfo > p {
+  width: 70%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.agents > .content > .right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.agents > .content > .right > img {
+  position: absolute;
+  margin-right: 50px;
+  margin-left: auto;
+  height: 90%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.agents .content .right img.activeAgents {
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  align-items: row;
+  width: 100px;
+  padding-left: 80px;
+}
+
+.controls li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #ffd60a;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.controls li:hover {
+  background: #ffe460;
+}
+
+.controls li:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 3px solid #111;
+  border-bottom: 3px solid #111;
+  transform: rotate(45deg);
+}
+
+.controls li:nth-child(2):before {
+  transform: rotate(225deg);
+}
