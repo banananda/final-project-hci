@@ -42,6 +42,7 @@
 
 .agentsInfo {
   height: 100%;
+  width: 60%;
   margin-left: 80px;
   position: absolute;
   display: flex;
@@ -55,23 +56,35 @@
 
 .agentsInfo div.activeInfo {
   display: block;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.agentsInfo > h2 {
-  font-size: 72px;
+.agentsInfo > div > h2 {
+  font-size: 60px;
   color: #001d3d;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 900;
-  line-height: 72px;
+  line-height: 15px;
   font-family: "Roboto", sans-serif;
 }
 
-.agentsInfo > p {
-  width: 70%;
+.agentsInfo > div > h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 650;
+  font-family: "Roboto", sans-serif;
+}
+
+.agentsInfo > div > p {
+  color: #000;
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 10px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -100,7 +113,7 @@
 
 .controls {
   position: absolute;
-  top: 60%;
+  top: 65%;
   display: flex;
   align-items: row;
   width: 100px;

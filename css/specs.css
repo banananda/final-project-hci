@@ -18,19 +18,20 @@
   padding-top: 100px;
 }
 
-h1 {
+.specs h1 {
   font-size: 40px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
-p {
+.specs-column p {
   color: #666;
   font-size: 15px;
   font-weight: 600;
   line-height: 22px;
   padding: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .row {
@@ -49,7 +50,7 @@ p {
   transition: 0.5s;
 }
 
-h3 {
+.specs-column h3 {
   border-bottom: 1px solid #fff;
   color: #000;
   text-align: center;
@@ -58,6 +59,7 @@ h3 {
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .specs-column:hover {
