@@ -118,7 +118,7 @@ a {
 
 #logo-navbar-text {
   display: none;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #ffd60a;
 }
@@ -139,23 +139,21 @@ a {
 @media only screen and (max-width: 800px) {
   nav {
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
     flex-direction: column;
   }
 
   #menu {
-    display: none;
+    /* transition: all 500ms ease; */
+    display: flex;
     position: absolute;
     flex-direction: column;
     margin-top: 130px;
-    /* padding-top: 50px; */
     margin-left: 0px;
     width: 240px;
     height: 100vh;
-    right: 0;
+    right: -240px;
     background-color: #05274b;
-    box-shadow: 0 0 5px #001d3d;
+    box-shadow: none;
   }
 
   .dropdown {
@@ -174,7 +172,7 @@ a {
 
   .dropdown-content a {
     padding: 20px;
-    background-color: #0b2c51;
+    background-color: #103c6e;
     border-bottom: 1px solid #001226;
   }
 
@@ -188,14 +186,14 @@ a {
   }
 
   #pre-reg-btn {
-    display: none;
+    display: blcok;
     position: absolute;
-    right: 0;
+    right: -240px;
     top: 80px;
     height: 50px;
     width: 240px;
     border-radius: 0;
-    box-shadow: 0 0 5px #ffd60a;
+    box-shadow: none;
     text-align: left;
     padding-left: 20px;
   }
@@ -205,17 +203,9 @@ a {
     flex-direction: row;
   }
 
-  /* #logo-navbar-img {
-    position: relative;
-    margin-top: 20px;
-    top: 0;
-    left: 0;
-    display: none;
-  } */
-
   #logo-navbar-text {
     position: relative;
-    margin-top: 30px;
+    margin-top: 28px;
     display: flex;
   }
 
@@ -225,14 +215,6 @@ a {
     margin-right: 20px;
     left: 0;
   }
-
-  /* #logo-navbar-text {
-    display: block;
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    color: white;
-  } */
 
   #menu-btn {
     margin-top: 30px;
