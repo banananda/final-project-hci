@@ -1,11 +1,15 @@
 $(function () {
-  document.addEventListener("touchstart", handleTouchStart, false);
-  document.addEventListener("touchmove", handleTouchMove, false);
-
   var xDown = null;
 
   let container = $("#card-container");
   var position = 2;
+
+  document
+    .getElementById("card-container")
+    .addEventListener("touchstart", handleTouchStart, false);
+  document
+    .getElementById("card-container")
+    .addEventListener("touchmove", handleTouchMove, false);
 
   console.log($("#slider-navigation *"));
 
