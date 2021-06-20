@@ -1,96 +1,27 @@
-.agents {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-  }
-  
-  .agents .imgBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .agents .imgBackground img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: 0.5s;
-    background-position: center;
-  }
-  
-  .agents .imgBackground img.activeAgents {
-    opacity: 1;
-  }
-  
-  .controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 50px;
-  }
-  
-  .controls li {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background: #ffd60a;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .controls li:hover {
-    background: #ffe460;
-  }
-  
-  .controls li:before {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-left: 3px solid #111;
-    border-bottom: 3px solid #111;
-    transform: rotate(45deg);
-  }
-  
-  .controls li:nth-child(2):before {
-    transform: rotate(225deg);
-  }
-  
-  .agentsInfo {
-    position: absolute;
-    bottom: 0;
-    max-width: 700px;
-  }
-  
-  .agentsInfo div {
-    display: none;
-  }
-  
-  .agentsInfo div.activeInfo {
-    display: block;
-    padding: 30px;
-    padding-left: 100px;
-    background: hsla(211, 100%, 12%, 0.5);
-  }
-  
-  .agentsInfo div h2 {
-    color: #fff;
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .agentsInfo div p {
-    color: #fff;
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
-  }
+*{
+  /* CSS RESET */
+  margin:0;
+  padding:0;
+}
+
+section{
+  background-color: #f5ffc8;
+  display: flex;
+  flex-direction: column;
+}
+
+#agentsInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+
+i{
+  margin: 0px 20px;
+}
+
+.imgBackground{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
