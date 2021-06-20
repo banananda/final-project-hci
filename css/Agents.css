@@ -10,10 +10,15 @@ section{
   flex-direction: column;
 }
 
+#activeInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #agentsInfo{
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
 }
 
 i{
