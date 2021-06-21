@@ -126,9 +126,15 @@
 
   .mapsInfo div.activeInfo {
     padding: 40px 20px 20px 20px;
+    background-color: #f4f3ee;
   }
 
-  .mapsInfo h2 {
+  #maps-info h2 {
     margin-bottom: 20px;
+    color: #001d3d;
+  }
+
+  #maps-info p {
+    color: black;
   }
 }
