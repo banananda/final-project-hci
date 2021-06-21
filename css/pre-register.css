@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  height: 125%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/pre-reg-wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 10% auto;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+}
+
+.form-input{
+  top: 120px;
+  position: absolute;
+  width: 375px;
+  transition: 0.5s;
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.form-title{
+  display: flex;
+  text-decoration: none;
+  padding-top: 25px;
+  padding-left: 75px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #ffd60a;
+  border: 0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+}
+
+.submit-btn:hover{
+  background: #ffe460;
+}
+
+.check-box{
+  margin: 30px 10px 30px 0;
+
+}
+
+span{
+  color: #000;
+  font-size: 12px;
+  bottom: 65px;
+  position: absolute;
+}
+

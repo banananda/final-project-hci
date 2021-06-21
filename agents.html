@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LaForant</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="shortcut icon" href="images/laforant-logo-yellow.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/agents.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="shortcut icon"
+      href="images/laforant-logo-yellow.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-</head>
+    <script src="js/agents.js"></script>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATION BAR -->
     <nav>
         <a id="logo-navbar" href="index.html">
             <div href id="logo-navbar-img"></div>
+            <div id="logo-navbar-text">LAFORANT</div>
         </a>
         <div id="menu">
             <div class="dropdown">
-                <p class="menu-title">GAME INFO<img class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
+                <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
+                        src="images/Dropdown Arrow Icon.png" alt="">
                 </p>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="dropdown-info">
                     <a href="maps.html">MAPS</a>
                     <a href="agents.html">AGENTS</a>
                 </div>
@@ -35,10 +46,10 @@
                 </div>
             </a>
             <div class="dropdown">
-                <p class="menu-title">OUR SOCIALS<img class="dropdown-arrow" src="images/Dropdown Arrow Icon.png"
-                        alt="">
+                <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img
+                        class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
                 </p>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="dropdown-socials">
                     <a target="_blank" href="https://twitter.com/home">TWITTER</a>
                     <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
                     <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
@@ -47,15 +58,203 @@
             </div>
         </div>
         <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
+        <div onclick="toggleDropdown()" id="menu-btn"></div>
     </nav>
 
     <!-- CONTENT -->
     <!-- ISI KONTEN DI SINI -->
-    <section>
+    <section class="agents">
+      <div class="agents-background"></div>
+      <div class="content">
+        <div class="left">
+          <img src="images/overlay-sec2.png" alt="" srcset="" />
+          <div class="agentsInfo">
+            <div class="activeInfo">
+              <h2>BRIMSTONE</h2>
+              <h4>CONTROLLER</h4>
+              <p>
+                Joining from the USA, Brimstone's orbital arsenal ensures his
+                squad always has the advantage. His ability to deliver ability
+                precisely and safely make him the unmatched boots-on-the-ground
+                commander.
+              </p>
+            </div>
+            <div>
+              <h2>PHOENIX</h2>
+              <h4>DUELIST</h4>
+              <p>
+                Hailing from the U.K., Phoenix's star power shines through in
+                his fighting style, igniting the battlefield with flash and
+                flare.
+              </p>
+            </div>
+            <div>
+              <h2>SAGE</h2>
+              <h4>SENTINEL</h4>
+              <p>
+                The bastion of China, Sage creates safety for herself and her
+                team wherever she goes. Able to revive fallen friends and stave
+                of forceful assaults.
+              </p>
+            </div>
+            <div>
+              <h2>SOVA</h2>
+              <h4>INITIATOR</h4>
+              <p>
+                Born from the eternal winter of Russia's tundra, Sova tracks,
+                finds, and eliminates enemies with ruthless efficiency and
+                precision. His incredible scouting abilities ensure you can't
+                hide.
+              </p>
+            </div>
+            <div>
+              <h2>VIPER</h2>
+              <h4>CONTROLLER</h4>
+              <p>
+                The American chemist, Viper deploys an array of poisonous
+                chemical devices to control the battlefield and cripple the
+                enemy's vision.
+              </p>
+            </div>
+            <div>
+              <h2>CYPHER</h2>
+              <h4>SENTINEL</h4>
+              <p>
+                The Morrocan information broker, Cypher is a one-man
+                surveillance network who keeps tabs on the enemy's very move. No
+                secret is safe. Cypher is always watching.
+              </p>
+            </div>
+            <div>
+              <h2>REYNA</h2>
+              <h4>DUELIST</h4>
+              <p>
+                Forged in the heart of mexico, Reyna dominates single combat,
+                popping of with each kill she scores.
+              </p>
+            </div>
+            <div>
+              <h2>KILLJOY</h2>
+              <h4>SENTINEL</h4>
+              <p>
+                The genius of Germany, Killjoy secures and defends key
+                battlefield positions ith a collection of traps, turrets, and
+                mines.
+              </p>
+            </div>
+            <div>
+              <h2>BREACH</h2>
+              <h4>INITIATOR</h4>
+              <p>
+                The bionic Swede Breach fires powerful, targeted kinetic blast
+                to aggressively clear a path through enemies ground.
+              </p>
+            </div>
+            <div>
+              <h2>OMEN</h2>
+              <h4>CONTROLLER</h4>
+              <p>
+                Omen renders enemies blind, teleposts across the field, then
+                lets paranoia take hold as his foe scrambles to uncover where he
+                might strike next.
+              </p>
+            </div>
+            <div>
+              <h2>JETT</h2>
+              <h4>DUELIST</h4>
+              <p>
+                Representing her home country of South Korea, Jett's agile and
+                evasive fighting style lets her take risks no one else can.
+              </p>
+            </div>
+            <div>
+              <h2>RAZE</h2>
+              <h4>DUELIST</h4>
+              <p>
+                Raze Explodes out of Brazil with her big personality and big
+                guns. She excels at flushing entrenched enemies and clearing
+                tight spaces.
+              </p>
+            </div>
+            <div>
+              <h2>SKYE</h2>
+              <h4>INITIATOR</h4>
+              <p>
+                Hailing from Australia, Skye and her band of beasts trailblaze
+                the way through hostile territory. With her power to heal
+                others, the team is strongest and safest by Skye's side.
+              </p>
+            </div>
+            <div>
+              <h2>YORU</h2>
+              <h4>DUELIST</h4>
+              <p>
+                Japanese native Yoru rips holes straight through reality to
+                infiltrate enemy lines unseen. Using deception and aggression in
+                equal measure, he gets the drop on each target before they know
+                where to look.
+              </p>
+            </div>
+            <div>
+              <h2>ASTRA</h2>
+              <h4>CONTROLLER</h4>
+              <p>
+                Ghanaian Agent Astra harnesses the energies of the cosmos to
+                reshape battlefield to her whim. She's always eons ahead of her
+                enemy's next move.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div class="right">
+            <img src="images/Brimstone.png" class="activeAgents" />
+            <img src="images/Phoenix.png" />
+            <img src="images/Sage.png" />
+            <img src="images/Sova.png" />
+            <img src="images/Viper.png" />
+            <img src="images/Cypher.png" />
+            <img src="images/Reyna.png" />
+            <img src="images/Killjoy.png" />
+            <img src="images/Breach.png" />
+            <img src="images/Omen.png" />
+            <img src="images/Jett.png" />
+            <img src="images/Raze.png" />
+            <img src="images/Skye.png" />
+            <img src="images/Yoru.png" />
+            <img src="images/Astra.png" />
+        </div>
+      </div>
+
+      <ul class="controls">
+        <li id="slide-left"></li>
+        <li id="slide-right"></li>
+      </ul>
     </section>
 
-
-</body>
-
+    <!-- FOOTER -->
+    <footer>
+      <div class="top">
+        <img src="images/laforant-logo-yellow.png" alt="" />
+        <div>LAFORANT</div>
+      </div>
+      <div class="bottom">
+        <div id="social-media">
+          <a target="_blank" href="https://twitter.com/home"
+            ><img src="images/twitter.png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.youtube.com/"
+            ><img src="images/youtube.png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/"
+            ><img src="images/instagram.png" alt=""
+          /></a>
+          <a target="_blank" href="https://discord.com/"
+            ><img src="images/discord.png" alt=""
+          /></a>
+        </div>
+        <div id="copyright">© 2021 LAFORANT. All Right Reserved.</div>
+      </div>
+    </footer>
+  </body>
 </html>
