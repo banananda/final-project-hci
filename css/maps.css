@@ -94,3 +94,41 @@
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
+
+@media only screen and (max-width: 800px) {
+  .maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+  }
+
+  #img-container {
+    margin-top: 80px;
+    height: 40%;
+    min-height: 240px;
+    position: relative;
+  }
+
+  .controls {
+    top: 265px;
+    transform: translateY(0);
+  }
+
+  .mapsInfo {
+    position: relative;
+    max-width: none;
+    height: 60%;
+    width: 100%;
+  }
+
+  .mapsInfo div.activeInfo {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .mapsInfo h2 {
+    margin-bottom: 20px;
+  }
+}

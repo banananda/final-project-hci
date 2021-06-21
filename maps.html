@@ -1,162 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LaForant</title>
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/maps.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="shortcut icon"
-      href="images/laforant-logo-yellow.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js\script.js"></script>
-    <script src="js\maps.js"></script>
-  </head>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <nav>
-        <a id="logo-navbar" href="index.html">
-            <div href id="logo-navbar-img"></div>
-            <div id="logo-navbar-text">LAFORANT</div>
-        </a>
-        <div id="menu">
-            <div class="dropdown">
-                <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
-                        src="images/Dropdown Arrow Icon.png" alt="">
-                </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaForant</title>
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/maps.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="shortcut icon" href="images/laforant-logo-yellow.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js\script.js"></script>
+  <script src="js\maps.js"></script>
+</head>
 
-                <div class="dropdown-content" id="dropdown-info">
-                    <a href="maps.html">MAPS</a>
-                    <a href="agents.html">AGENTS</a>
-                </div>
-            </div>
-            <a href="specs.html">
-                <div class="menu-title">SPECS
-                </div>
-            </a>
-            <div class="dropdown">
-                <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img
-                        class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
-                </p>
-                <div class="dropdown-content" id="dropdown-socials">
-                    <a target="_blank" href="https://twitter.com/home">TWITTER</a>
-                    <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
-                    <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
-                    <a target="_blank" href="https://discord.com/">DISCORD</a>
-                </div>
-            </div>
-        </div>
-        <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
-        <div onclick="toggleDropdown()" id="menu-btn"></div>
-    </nav>
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a id="logo-navbar" href="index.html">
+      <div href id="logo-navbar-img"></div>
+      <div id="logo-navbar-text">LAFORANT</div>
+    </a>
+    <div id="menu">
+      <div class="dropdown">
+        <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
+            src="images/Dropdown Arrow Icon.png" alt="">
+        </p>
 
-    <!-- CONTENT -->
-    <!-- ISI KONTEN DI SINI -->
-    <section class="maps">
-      <div class="imgBackground">
-        <img src="images\Breeze Map.png" class="activeMaps" />
-        <img src="images\Icebox Map.png" />
-        <img src="images\Bind Map.png" />
-        <img src="images\Haven Map.png" />
-        <img src="images\Split Map.png" />
-        <img src="images\Ascent Map.png" />
-      </div>
-
-      <div class="mapsInfo">
-        <div class="activeInfo">
-          <h2>BREEZE</h2>
-          <p>
-            Take in the sights of historic ruins or seaside caves on this
-            tropical paradise. But bring some cover. You'll need them for the
-            wide open spaces and long range engagements. Watch your flanks and
-            this will be a Breeze.
-          </p>
-        </div>
-        <div>
-          <h2>ICEBOX</h2>
-          <p>
-            Your next battleground is a secret Kingdom excavation site overtaken
-            by the arctic. The two plant sites protected by snow and metal
-            require some horizontal finesse. Take advantage of the ziplines and
-            they’ll never see you coming.
-          </p>
-        </div>
-        <div>
-          <h2>BIND</h2>
-          <p>
-            Two sites. No middle. Gotta pick left or right. What’s it going to
-            be then? Both offer direct paths for attackers and a pair of one-way
-            teleporters make it easier to flank.
-          </p>
-        </div>
-        <div>
-          <h2>HAVEN</h2>
-          <p>
-            Beneath a forgotten monastery, a clamour emerges from rival Agents
-            clashing to control three sites. There’s more territory to control,
-            but defenders can use the extra real estate for aggressive pushes.
-          </p>
-        </div>
-        <div>
-          <h2>SPLIT</h2>
-          <p>
-            If you want to go far, you’ll have to go up. A pair of sites split
-            by an elevated center allows for rapid movement using two rope
-            ascenders. Each site is built with a looming tower vital for
-            control. Remember to watch above before it all blows sky-high.
-          </p>
-        </div>
-        <div>
-          <h2>ASCENT</h2>
-          <p>
-            An open playground for small wars of position and attrition divide
-            two sites on Ascent. Each site can be fortified by irreversible bomb
-            doors; once they’re down, you’ll have to destroy them or find
-            another way. Yield as little territory as possible.
-          </p>
+        <div class="dropdown-content" id="dropdown-info">
+          <a href="maps.html">MAPS</a>
+          <a href="agents.html">AGENTS</a>
         </div>
       </div>
-
-      <ul class="controls">
-        <li id="slide-left"></li>
-        <li id="slide-right"></li>
-      </ul>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="top">
-        <img src="images/laforant-logo-yellow.png" alt="" />
-        <div>LAFORANT</div>
-      </div>
-      <div class="bottom">
-        <div id="social-media">
-          <a target="_blank" href="https://twitter.com/home"
-            ><img src="images/twitter.png" alt=""
-          /></a>
-          <a target="_blank" href="https://www.youtube.com/"
-            ><img src="images/youtube.png" alt=""
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/"
-            ><img src="images/instagram.png" alt=""
-          /></a>
-          <a target="_blank" href="https://discord.com/"
-            ><img src="images/discord.png" alt=""
-          /></a>
+      <a href="specs.html">
+        <div class="menu-title">SPECS
         </div>
-        <div id="copyright">© 2021 LAFORANT. All Right Reserved.</div>
+      </a>
+      <div class="dropdown">
+        <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img class="dropdown-arrow"
+            src="images/Dropdown Arrow Icon.png" alt="">
+        </p>
+        <div class="dropdown-content" id="dropdown-socials">
+          <a target="_blank" href="https://twitter.com/home">TWITTER</a>
+          <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
+          <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
+          <a target="_blank" href="https://discord.com/">DISCORD</a>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
+    <div onclick="toggleDropdown()" id="menu-btn"></div>
+  </nav>
+
+  <!-- CONTENT -->
+  <!-- ISI KONTEN DI SINI -->
+  <section class="maps">
+    <div class="imgBackground" id="img-container">
+      <img src="images\Breeze Map.png" class="activeMaps" />
+      <img src="images\Icebox Map.png" />
+      <img src="images\Bind Map.png" />
+      <img src="images\Haven Map.png" />
+      <img src="images\Split Map.png" />
+      <img src="images\Ascent Map.png" />
+    </div>
+
+    <div class="mapsInfo">
+      <div class="activeInfo">
+        <h2>BREEZE</h2>
+        <p>
+          Take in the sights of historic ruins or seaside caves on this
+          tropical paradise. But bring some cover. You'll need them for the
+          wide open spaces and long range engagements. Watch your flanks and
+          this will be a Breeze.
+        </p>
+      </div>
+      <div>
+        <h2>ICEBOX</h2>
+        <p>
+          Your next battleground is a secret Kingdom excavation site overtaken
+          by the arctic. The two plant sites protected by snow and metal
+          require some horizontal finesse. Take advantage of the ziplines and
+          they’ll never see you coming.
+        </p>
+      </div>
+      <div>
+        <h2>BIND</h2>
+        <p>
+          Two sites. No middle. Gotta pick left or right. What’s it going to
+          be then? Both offer direct paths for attackers and a pair of one-way
+          teleporters make it easier to flank.
+        </p>
+      </div>
+      <div>
+        <h2>HAVEN</h2>
+        <p>
+          Beneath a forgotten monastery, a clamour emerges from rival Agents
+          clashing to control three sites. There’s more territory to control,
+          but defenders can use the extra real estate for aggressive pushes.
+        </p>
+      </div>
+      <div>
+        <h2>SPLIT</h2>
+        <p>
+          If you want to go far, you’ll have to go up. A pair of sites split
+          by an elevated center allows for rapid movement using two rope
+          ascenders. Each site is built with a looming tower vital for
+          control. Remember to watch above before it all blows sky-high.
+        </p>
+      </div>
+      <div>
+        <h2>ASCENT</h2>
+        <p>
+          An open playground for small wars of position and attrition divide
+          two sites on Ascent. Each site can be fortified by irreversible bomb
+          doors; once they’re down, you’ll have to destroy them or find
+          another way. Yield as little territory as possible.
+        </p>
+      </div>
+    </div>
+
+    <ul class="controls">
+      <li id="slide-left"></li>
+      <li id="slide-right"></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="top">
+      <img src="images/laforant-logo-yellow.png" alt="" />
+      <div>LAFORANT</div>
+    </div>
+    <div class="bottom">
+      <div id="social-media">
+        <a target="_blank" href="https://twitter.com/home"><img src="images/twitter.png" alt="" /></a>
+        <a target="_blank" href="https://www.youtube.com/"><img src="images/youtube.png" alt="" /></a>
+        <a target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png" alt="" /></a>
+        <a target="_blank" href="https://discord.com/"><img src="images/discord.png" alt="" /></a>
+      </div>
+      <div id="copyright">© 2021 LAFORANT. All Right Reserved.</div>
+    </div>
+  </footer>
+</body>
+
 </html>
