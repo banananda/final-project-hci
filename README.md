@@ -1,4 +1,5 @@
-# final-project-hci
+# FINAL PROJECT HCI
+### LAFORANT WEBSITE
 
 Anggota
 * 2440030323 - Enrico Fernandez
