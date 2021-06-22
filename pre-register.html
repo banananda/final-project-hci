@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/pre-register.js"></script>
-    <title>LaForant</title>
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/pre-register.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="shortcut icon"
-      href="images/laforant-logo-yellow.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-  </head>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <nav>
-        <a id="logo-navbar" href="index.html">
-            <div href id="logo-navbar-img"></div>
-            <div id="logo-navbar-text">LAFORANT</div>
-        </a>
-        <div id="menu">
-            <div class="dropdown">
-                <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
-                        src="images/Dropdown Arrow Icon.png" alt="">
-                </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/pre-register.js"></script>
+  <title>LaForant</title>
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/pre-register.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="shortcut icon" href="images/laforant-logo-yellow.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script src="js/jquery-3.5.1.js"></script>
 
-                <div class="dropdown-content" id="dropdown-info">
-                    <a href="maps.html">MAPS</a>
-                    <a href="agents.html">AGENTS</a>
-                </div>
-            </div>
-            <a href="specs.html">
-                <div class="menu-title">SPECS
-                </div>
-            </a>
-            <div class="dropdown">
-                <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img
-                        class="dropdown-arrow" src="images/Dropdown Arrow Icon.png" alt="">
-                </p>
-                <div class="dropdown-content" id="dropdown-socials">
-                    <a target="_blank" href="https://twitter.com/home">TWITTER</a>
-                    <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
-                    <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
-                    <a target="_blank" href="https://discord.com/">DISCORD</a>
-                </div>
-            </div>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a id="logo-navbar" href="index.html">
+      <div href id="logo-navbar-img"></div>
+      <div id="logo-navbar-text">LAFORANT</div>
+    </a>
+    <div id="menu">
+      <div class="dropdown">
+        <p onclick="toggleInfo()" class="menu-title" id="menu-title-info">GAME INFO<img class="dropdown-arrow"
+            src="images/Dropdown Arrow Icon.png" alt="">
+        </p>
+
+        <div class="dropdown-content" id="dropdown-info">
+          <a href="maps.html">MAPS</a>
+          <a href="agents.html">AGENTS</a>
         </div>
-        <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
-        <div onclick="toggleDropdown()" id="menu-btn"></div>
-    </nav>
-
-    <!-- CONTENT -->
-    <!-- ISI KONTEN DI SINI -->
-      <div class="form">
-        <div class="form-box">
-          <div class="form-title"><h1>PRE-REGISTER</h1></div>
-          <form action="" class="form-input">
-            <input type="text" class="input-field" id="email" placeholder="Email"/>
-            <input type="text" class="input-field" id="username" placeholder="Username"/>
-            <input type="password" class="input-field" id="password" placeholder="Enter Password"/>
-            <input type="date" class="input-field" id="dob"/>
-            <input type="checkbox" class="check-box" id="agreement" /> <span>I agree to the terms and conditions and the privacy policy</span>
-            <button type="submit" class="submit-btn" onclick="validate()">SUBMIT</button>
-          </form>
+      </div>
+      <a href="specs.html">
+        <div class="menu-title">SPECS
         </div>
+      </a>
+      <div class="dropdown">
+        <p onclick="toggleSocials()" class="menu-title" id="menu-title-socials">OUR SOCIALS<img class="dropdown-arrow"
+            src="images/Dropdown Arrow Icon.png" alt="">
+        </p>
+        <div class="dropdown-content" id="dropdown-socials">
+          <a target="_blank" href="https://twitter.com/home">TWITTER</a>
+          <a target="_blank" href="https://www.youtube.com/">YOUTUBE</a>
+          <a target="_blank" href="https://www.instagram.com/">INSTAGRAM</a>
+          <a target="_blank" href="https://discord.com/">DISCORD</a>
+        </div>
+      </div>
+    </div>
+    <button onclick="document.location='pre-register.html'" id="pre-reg-btn">PRE-REGISTER</button>
+    <div onclick="toggleDropdown()" id="menu-btn"></div>
+  </nav>
+
+  <!-- CONTENT -->
+  <!-- ISI KONTEN DI SINI -->
+  <div class="form">
+    <div class="form-box">
+      <div class="form-title">
+        <h1>PRE-REGISTER</h1>
+      </div>
+      <form action="" class="form-input">
+        <input type="text" class="input-field" id="email" placeholder="Email" />
+        <input type="text" class="input-field" id="username" placeholder="Username" />
+        <input type="password" class="input-field" id="password" placeholder="Enter Password" />
+        <input type="date" class="input-field" id="dob" />
+        <input type="checkbox" class="check-box" id="agreement" /> <span>I agree to the terms and conditions and the
+          privacy policy</span>
+        <button type="submit" class="submit-btn" onclick="validate()">SUBMIT</button>
+      </form>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -84,21 +81,14 @@
       </div>
       <div class="bottom">
         <div id="social-media">
-          <a target="_blank" href="https://twitter.com/home"
-            ><img src="images/twitter.png" alt=""
-          /></a>
-          <a target="_blank" href="https://www.youtube.com/"
-            ><img src="images/youtube.png" alt=""
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/"
-            ><img src="images/instagram.png" alt=""
-          /></a>
-          <a target="_blank" href="https://discord.com/"
-            ><img src="images/discord.png" alt=""
-          /></a>
+          <a target="_blank" href="https://twitter.com/home"><img src="images/twitter.png" alt="" /></a>
+          <a target="_blank" href="https://www.youtube.com/"><img src="images/youtube.png" alt="" /></a>
+          <a target="_blank" href="https://www.instagram.com/"><img src="images/instagram.png" alt="" /></a>
+          <a target="_blank" href="https://discord.com/"><img src="images/discord.png" alt="" /></a>
         </div>
         <div id="copyright">© 2021 LAFORANT. All Right Reserved.</div>
       </div>
     </footer>
-  </body>
+</body>
+
 </html>
